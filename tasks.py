@@ -14,3 +14,13 @@ def intersection(a,b):
     return [x for x in a if x in b]
 
 print intersection([1,2,3],[2,3,4])
+
+def set_difference(a,b):
+    return [x for x in a if x not in b]
+
+print set_difference([1,2,3],[2,3,4])
+
+def sym_difference(a,b):
+    return set_difference(a,b)+ set_difference(b,a)
+
+print sym_difference([1,2,3],[2,3,4])
